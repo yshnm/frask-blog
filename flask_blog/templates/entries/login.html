@@ -1,7 +1,6 @@
 <!-- flask_blog/templates/entries/login.html-->
-
 <!doctype html>
-<heak>
+<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -13,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
     </script>
-</heak>
+</head>
 
 <div class="container">
     <nav class="navber navbar-expand-lg navbar-light bg-light">
@@ -36,7 +35,7 @@
     </nav>
 
     <div class="blog-body">
-        <from action="/login" method=post>
+        <form action="/login" method=post>
             <div class="form-group">
                 <label for="InputTitle">ユーザ名</label>
                 <input type="text" class="form-control" id="InputTitle" name="username" />
@@ -45,8 +44,8 @@
                 <label for="InputPassword">パスワード</label>
                 <input type="password" class="form-control" id="InputPassword" name="password" />
             </div>
-            <input type="submit" value="ログイン">
-        </from>
+            <button type="submit" class="btn btn-primary">ログイン</button>
+        </form>
 
     </div>
 </div>
